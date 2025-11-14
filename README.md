@@ -12,7 +12,7 @@ A practical implementation integrating ML-KEM-768 (post-quantum key encapsulatio
 
 ```bash
 # Clone and setup
-git clone <repository-url>
+git clone <https://github.com/ThinkOutSideTheBlock/Verifiable-Private-Voting-with-Post-Quantum-Security>
 cd verifiable-private-voting
 
 # Install Python dependencies
@@ -100,8 +100,10 @@ python3 tests/benchmark_suite.py
 - **Byzantine Fault Tolerance**: Tolerates up to ⅓ malicious parties
 - **Malicious Security**: Verified commitments and secret sharing
 
+## Citation
+If you use this software, please cite it as:
 
-
+Khoshakhlagh, Sajjad. (2025). Verifiable Private Voting with Post-Quantum Security: Integrating ML-KEM, Zero-Knowledge Proofs, and Multi-Party Computation (v1.0.0-alpha). Zenodo. https://doi.org/10.5281/zenodo.17611890
 
 ### License
 MIT License
