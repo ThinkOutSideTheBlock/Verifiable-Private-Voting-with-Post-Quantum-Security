@@ -1,0 +1,68 @@
+# ============================================================================
+# VERIFIABLE PRIVATE VOTING SYSTEM - Python Dependencies
+# ============================================================================
+# These are the ESSENTIAL dependencies needed to run the system
+# Install with: pip install -r requirements.txt
+# ============================================================================
+
+# POST-QUANTUM CRYPTOGRAPHY
+# ============================================================================
+liboqs-python==0.14.0          # Open Quantum Safe - ML-KEM-768, ML-DSA-65
+cryptography>=41.0.0           # General cryptographic primitives
+pycryptodome>=3.18.0           # Additional crypto utilities
+
+# ZERO-KNOWLEDGE PROOFS & CIRCUITS
+# ============================================================================
+# Note: snarkjs and circom must be installed via Node.js
+# Install separately with: npm install snarkjs circom
+
+# MULTI-PARTY COMPUTATION & FIELD ARITHMETIC
+# ============================================================================
+galois>=0.3.0                  # Finite field operations for MPC
+
+# CRYPTOGRAPHIC PROTOCOLS
+# ============================================================================
+python-pkcs11>=1.5.0           # PKCS#11 for HSM integration
+pyasn1>=0.4.8                  # ASN.1 encoding/decoding
+
+# ASYNC & NETWORKING
+# ============================================================================
+aiohttp>=3.9.0                 # Async HTTP for distributed protocols
+asyncio-mqtt>=0.16.0           # MQTT support for message distribution
+
+# SECURITY & UTILITIES
+# ============================================================================
+psutil>=5.9.0                  # System monitoring for benchmarks
+paho-mqtt>=1.6.0               # MQTT broker support
+
+# VISUALIZATION & DATA ANALYSIS (Optional, for benchmarks)
+# ============================================================================
+matplotlib>=3.5.0              # Publication-quality figures
+seaborn>=0.12.0                # Statistical visualization
+pandas>=1.5.0                  # Data analysis for benchmarks
+numpy>=1.24.0                  # Numerical operations
+
+# DEVELOPMENT TOOLS (Optional)
+# ============================================================================
+# pytest>=7.0.0                  # Unit testing (uncomment if needed)
+# black>=23.0.0                  # Code formatting (uncomment if needed)
+# pylint>=2.17.0                 # Code linting (uncomment if needed)
+
+# ============================================================================
+# SYSTEM REQUIREMENTS
+# ============================================================================
+# 1. Install Node.js and npm:
+#    $ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+#    $ sudo apt-get install -y nodejs
+#
+# 2. Install circom and snarkjs (Node.js-based):
+#    $ npm install circom snarkjs
+#
+# 3. Install Python dependencies:
+#    $ pip install -r requirements.txt
+#
+# 4. [OPTIONAL] Install liboqs system library for HSM support:
+#    $ sudo apt-get install liboqs-dev (Ubuntu/Debian)
+#    $ brew install open-quantum-safe/oqs/liboqs (macOS)
+#
+# ============================================================================
